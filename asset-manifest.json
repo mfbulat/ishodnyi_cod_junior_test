@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ishodnyi_cod_junior_test/static/css/main.317e402a.chunk.css",
+    "main.js": "/ishodnyi_cod_junior_test/static/js/main.9ce9a1b9.chunk.js",
+    "main.js.map": "/ishodnyi_cod_junior_test/static/js/main.9ce9a1b9.chunk.js.map",
+    "runtime-main.js": "/ishodnyi_cod_junior_test/static/js/runtime-main.c25ca8d5.js",
+    "runtime-main.js.map": "/ishodnyi_cod_junior_test/static/js/runtime-main.c25ca8d5.js.map",
+    "static/js/2.d71b119b.chunk.js": "/ishodnyi_cod_junior_test/static/js/2.d71b119b.chunk.js",
+    "static/js/2.d71b119b.chunk.js.map": "/ishodnyi_cod_junior_test/static/js/2.d71b119b.chunk.js.map",
+    "static/js/3.37bed905.chunk.js": "/ishodnyi_cod_junior_test/static/js/3.37bed905.chunk.js",
+    "static/js/3.37bed905.chunk.js.map": "/ishodnyi_cod_junior_test/static/js/3.37bed905.chunk.js.map",
+    "index.html": "/ishodnyi_cod_junior_test/index.html",
+    "static/css/main.317e402a.chunk.css.map": "/ishodnyi_cod_junior_test/static/css/main.317e402a.chunk.css.map",
+    "static/js/2.d71b119b.chunk.js.LICENSE.txt": "/ishodnyi_cod_junior_test/static/js/2.d71b119b.chunk.js.LICENSE.txt",
+    "static/media/bell-icon.11b85ebb.svg": "/ishodnyi_cod_junior_test/static/media/bell-icon.11b85ebb.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c25ca8d5.js",
+    "static/js/2.d71b119b.chunk.js",
+    "static/css/main.317e402a.chunk.css",
+    "static/js/main.9ce9a1b9.chunk.js"
+  ]
+}
