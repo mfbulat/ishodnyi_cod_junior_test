@@ -1,0 +1,24 @@
+.appContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    border: 1px slategray solid;
+    height: 80%;
+    border-radius: 5px;
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+}
+
+
+

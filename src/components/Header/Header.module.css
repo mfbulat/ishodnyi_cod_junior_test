@@ -1,0 +1,32 @@
+.header {
+    height: 50px;
+    background: lightsteelblue;
+    border-radius: 5px 5px 0 0;
+    padding: 0 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.iconBlock {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.newEventsCount{
+    height: 50%;
+    width: 50%;
+    background-color: indianred;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+
+}
+
+.newEventsCount span{
+    font-weight: bold;
+    color: white;
+}
