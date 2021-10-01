@@ -8,7 +8,7 @@ import {showHideEvent} from "../../state/app-reducer";
 const EventForm = () => {
     const [eventTitle, setEventTitle] = useState('')
     const events = useSelector<AppRootStateType, Array<EType>>(state => state.even)
-    const showEventList = useSelector<AppRootStateType, any>(state => state.app.showEventList)
+    const showEventListToggle = useSelector<AppRootStateType, any>(state => state.app.showEventListToggle)
     const [count, setCount] = useState(events.length + 1)
     const dispatch = useDispatch()
 
@@ -40,7 +40,7 @@ const EventForm = () => {
     }
 
     const onShowHideEventList = () => {
-        dispatch(showHideEvent(!showEventList))
+        dispatch(showHideEvent(!showEventListToggle))
     }
 
     const onKeyPressHandler = (e: React.KeyboardEvent) => {
@@ -62,7 +62,7 @@ const EventForm = () => {
                 <button className={style.formItem} onClick={onReadAllEvents}>Пометить все события прочитанными</button>
                 <button className={style.formItem} onClick={onRemoveAllEvents}>Удалить все события</button>
                 <button className={style.formItem} onClick={onShowHideEventList}>
-                    {showEventList ? 'Показать попап нотификаций' :'Скрыть попап нотификаций'}
+                    {!showEventListToggle ? 'Показать попап нотификаций' :'Скрыть попап нотификаций'}
                 </button>
             </div>
         </div>

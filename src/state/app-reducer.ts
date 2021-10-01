@@ -1,17 +1,15 @@
 export  type AppType = {
-    showEventList: boolean
-    // eventListBtnToggle: boolean
+    showEventListToggle: boolean
 }
 
 const initialState: AppType = {
-    showEventList: true,
-    // eventListBtnToggle: true,
+    showEventListToggle: true,
 }
 
 export const appReducer = (state: AppType = initialState, action: ActionsType): AppType => {
     switch (action.type) {
         case "SHOW-HIDE-EVENT":
-            return {...state, showEventList: action.showEvent}
+            return {...state, showEventListToggle: action.showEvent}
         default:
             return state
     }

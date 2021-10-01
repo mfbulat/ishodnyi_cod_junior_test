@@ -1,4 +1,4 @@
-import React, from 'react';
+import React from 'react';
 import style from "./EventsList.module.css";
 import {useDispatch, useSelector} from "react-redux";
 import {AppRootStateType} from "../../state/store";
@@ -9,7 +9,7 @@ import "./event-list-styles.css"
 
 const EventsList = () => {
     const events = useSelector<AppRootStateType, Array<EType>>(state => state.even)
-    const showEventList = useSelector<AppRootStateType, any>(state => state.app.showEventList)
+    const showEventListToggle = useSelector<AppRootStateType, any>(state => state.app.showEventListToggle)
 
     const dispatch = useDispatch()
 
@@ -26,9 +26,9 @@ const EventsList = () => {
     return (
         <div className={style.eventsListContainer}>
             <CSSTransition
-                in={showEventList}
+                in={showEventListToggle}
                 timeout={2000}
-                classNames="alert"
+                classNames="event-list"
                 unmountOnExit
             >
                 <div className={style.eventsListWrapper}>
