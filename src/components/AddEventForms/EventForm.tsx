@@ -61,8 +61,8 @@ const EventForm = () => {
                 </div>
                 <button className={style.formItem} onClick={onReadAllEvents}>Пометить все события прочитанными</button>
                 <button className={style.formItem} onClick={onRemoveAllEvents}>Удалить все события</button>
-                <button className={style.formItem} onClick={onShowHideEventList}>Скрыть/показать попап нотификаций
-                    (toggle btn)
+                <button className={style.formItem} onClick={onShowHideEventList}>
+                    {showEventList ? 'Показать попап нотификаций' :'Скрыть попап нотификаций'}
                 </button>
             </div>
         </div>
