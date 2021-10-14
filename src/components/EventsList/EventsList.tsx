@@ -1,11 +1,11 @@
-import React from 'react';
-import style from "./EventsList.module.css";
-import {useDispatch, useSelector} from "react-redux";
-import {AppRootStateType} from "../../state/store";
-import {EType} from "../../state/event-reducer";
-import {showHideEvent} from "../../state/app-reducer";
-import {CSSTransition} from "react-transition-group";
-import "./event-list-styles.css"
+import React from 'react'
+import style from './EventsList.module.css'
+import {useDispatch, useSelector} from 'react-redux'
+import {AppRootStateType} from '../../state/store'
+import {EType} from '../../state/event-reducer'
+import {showHideEvent} from '../../state/app-reducer'
+import {CSSTransition} from 'react-transition-group'
+import './event-list-styles.css'
 
 const EventsList = () => {
     const events = useSelector<AppRootStateType, Array<EType>>(state => state.even)
@@ -28,7 +28,7 @@ const EventsList = () => {
             <CSSTransition
                 in={showEventListToggle}
                 timeout={2000}
-                classNames="event-list"
+                classNames='event-list'
                 unmountOnExit
             >
                 <div className={style.eventsListWrapper}>

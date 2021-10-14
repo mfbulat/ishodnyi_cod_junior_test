@@ -1,9 +1,7 @@
 import {applyMiddleware, combineReducers, createStore} from 'redux'
 import thunkMiddleware from 'redux-thunk'
-import {eventsReducer} from "./event-reducer";
-import {appReducer} from "./app-reducer";
-
-
+import {eventsReducer} from './event-reducer'
+import {appReducer} from './app-reducer'
 
 const rootReducer = combineReducers({
     even: eventsReducer,

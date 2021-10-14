@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from 'react';
-import {useDispatch, useSelector} from "react-redux";
-import {addEvent, deleteAllEvents, EType, readAllEvents} from "../../state/event-reducer";
-import {AppRootStateType} from "../../state/store";
-import style from "./EventForm.module.css"
-import {showHideEvent} from "../../state/app-reducer";
+import React, {useEffect, useState} from 'react'
+import {useDispatch, useSelector} from 'react-redux'
+import {addEvent, deleteAllEvents, EType, readAllEvents} from '../../state/event-reducer'
+import {AppRootStateType} from '../../state/store'
+import style from './EventForm.module.css'
+import {showHideEvent} from '../../state/app-reducer'
 
 const EventForm = () => {
     const [eventTitle, setEventTitle] = useState('')
@@ -50,19 +50,19 @@ const EventForm = () => {
     return (
         <div className={style.eFormContainer}>
             <div className={style.eForm}>
-                <div className={style.formItem}>
+                <form onSubmit={handleSubmit} className={style.formItem}>
                     <input
                         type='text'
                         value={eventTitle}
                         onChange={(e) => setEventTitle(e.target.value)}
                         onKeyPress={onKeyPressHandler}
                     />
-                    <button onClick={handleSubmit}>Отправить</button>
-                </div>
+                    <button type={'submit'}>Отправить</button>
+                </form>
                 <button className={style.formItem} onClick={onReadAllEvents}>Пометить все события прочитанными</button>
                 <button className={style.formItem} onClick={onRemoveAllEvents}>Удалить все события</button>
                 <button className={style.formItem} onClick={onShowHideEventList}>
-                    {!showEventListToggle ? 'Показать попап нотификаций' :'Скрыть попап нотификаций'}
+                    {!showEventListToggle ? 'Показать попап нотификаций' : 'Скрыть попап нотификаций'}
                 </button>
             </div>
         </div>

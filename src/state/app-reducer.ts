@@ -8,7 +8,7 @@ const initialState: AppType = {
 
 export const appReducer = (state: AppType = initialState, action: ActionsType): AppType => {
     switch (action.type) {
-        case "SHOW-HIDE-EVENT":
+        case 'SHOW-HIDE-EVENT':
             return {...state, showEventListToggle: action.showEvent}
         default:
             return state

@@ -11,11 +11,11 @@ const initialState: Array<EType> = [
 
 export const eventsReducer = (state: Array<EType> = initialState, action: ActionsType): Array<EType> => {
     switch (action.type) {
-        case "ADD-EVENT":
+        case 'ADD-EVENT':
             return [{id: '12', title: action.title, date: action.date, isRead: false}, ...state]
-        case "READ-ALL-EVENTS":
+        case 'READ-ALL-EVENTS':
             return state.map(el=>({...el, isRead: true}))
-        case "DELETE-ALL-EVENTS":
+        case 'DELETE-ALL-EVENTS':
             return state=[]
         default:
             return state

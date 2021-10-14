@@ -1,9 +1,9 @@
-import React from 'react';
-import style from "./Header.module.css";
-import {useSelector} from "react-redux";
-import {AppRootStateType} from "../../state/store";
-import {EType} from "../../state/event-reducer";
-import BellIcon from "./../../assets/images/bell-icon.svg"
+import React from 'react'
+import style from './Header.module.css'
+import {useSelector} from 'react-redux'
+import {AppRootStateType} from '../../state/store'
+import {EType} from '../../state/event-reducer'
+import BellIcon from './../../assets/images/bell-icon.svg'
 
 const Header = () => {
 

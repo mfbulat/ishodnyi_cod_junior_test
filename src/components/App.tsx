@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 import style from './App.module.css'
-import EventForm from "./AddEventForms/EventForm";
-import Header from "./Header/Header";
-import EventsList from "./EventsList/EventsList";
+import EventForm from './AddEventForms/EventForm'
+import Header from './Header/Header'
+import EventsList from './EventsList/EventsList'
 
 
 function App() {
